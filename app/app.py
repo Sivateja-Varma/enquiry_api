@@ -62,8 +62,7 @@ async def RegisterUser(data:UserPost,session:SessionDep):
       try:
          user=User(
             name=data.name,
-            hash_pass=hashed_password(data.hash_pass),
-            role="admin"
+            hash_pass=hashed_password(data.hash_pass)
          )
          session.add(user)
          session.commit()
