@@ -1,0 +1,16 @@
+[project]
+name = "prac-end"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bcrypt==4.0.1",
+    "fastapi[standard]>=0.135.2",
+    "passlib[bcrypt]>=1.7.4",
+    "pyjwt>=2.12.1",
+    "pytest>=9.0.2",
+    "python-jose>=3.5.0",
+    "sqlmodel>=0.0.37",
+    "uvicorn>=0.42.0",
+]
